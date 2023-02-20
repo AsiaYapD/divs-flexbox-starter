@@ -87,7 +87,7 @@ textarea {
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #222;
     padding: 0.2em 0;
 }
 
@@ -99,16 +99,58 @@ textarea {
 html {
   background-color: #1f1d1d;
   height: 100%;
+  width:100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: .75em;
+  padding: 0em 2em;
+  font-size: 1em;
   height: 100%;
+  display:flex;
+  justify-content: center;
+
 }
 
-.wrapper {
+header,
+footer {
+    background-color: #1f1d1d;
+    height: 80px;
+    width: 100%;
+    color:#fff;
+    justify-content: flex-start;
+
+}
+
+header{
+    font-size: 3em;
+    font-family: 'Lora', sans-serif;
+}
+
+footer{
+    font-size: 2em;
+    border-top: .5px solid #fff;
+}
+
+main {
+    background-color: #1f1d1d;
+    height: 250px;
+    width: 100%;
+    color:#fff;
+    font-size: 2em;
+    margin:0;
+    border-bottom: .5px solid #fff;
+}
+
+header,
+footer,
+main {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
@@ -127,17 +169,26 @@ body {
   height: auto;
   display: flex;
   width:30%;
+  height:200px;
   justify-content: center;
   align-items: center;
 }
+
 .div-2 {
-    border-left: 1px solid #fff;
-    padding-left:1em;
-    border-right: 1px solid #fff;
+    border-left: .5px solid #fff;
+    padding-left:2em;
+    border-right: .4px solid #fff;
     padding-right:1em;
-
-
 }
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 
 /* ==========================================================================
    Helper classes
